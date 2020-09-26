@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.example {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: flex-start;  /* Update this */
+
+  width: 800px;
+  margin: 50px 0;
+  background-color: #D6E9FE;
+}
+
+.item img {
+  display: block;
+}
+
+/* RELATIVE POSITIONING */
+/* .item-relative {
+  position: relative;
+  top: 30px;
+  left: 30px;
+} */
+.item-relative {
+  position: relative;
+  bottom: 30px; /* OR */
+  /* top:-30px; */
+  right: 30px;
+}
+
+/* ABSOLUTE POSITIONING */
+.item-absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.absolute {
+  position: relative;
+}
+
+/* FIXED POSITIONING */
+.item-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
